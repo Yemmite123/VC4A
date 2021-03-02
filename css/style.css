@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Proxima Nova Alt Th';
+    src: url('../fonts/ProximaNovaA-Thin.woff2') format('woff2'),
+        url('../fonts/ProximaNovaA-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Alt Lt';
+    src: url('../fonts/ProximaNovaA-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNovaA-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Alt Rg';
+    src: url('../fonts/ProximaNovaA-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNovaA-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNovaT-Thin.woff2') format('woff2'),
+        url('../fonts/ProximaNovaT-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Extrabld.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+body{
+  background-color: #f3f3f0;
+}
+#vc4a{
+    background-color: #fff;
+}
+.navbar{
+    height: 64px;
+    box-shadow:none;
+}
+.navbar-nav{
+    margin-left: 40px;
+}
+
+.navbar-nav > li{
+    padding-left: 30px;
+}
+
+.navbar-nav > li > a{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1F1F1F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.navbar-nav > li > a:hover{
+    color: #009083;
+    border-radius: 10px;
+}
+
+.btn_signin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 16px;
+    background: #009083;
+    border-radius: 2px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    box-shadow:none;
+}
+
+.btn_signin:hover{
+    background-color: #fff;
+    color: #009083;
+    border: 2px solid #009083;
+    border-radius: 10px;
+}
+
+
+.dropdown-menu{
+    /* width: 360px; */
+    left: 16px;
+    top: 47px;
+    background: #FFFFFF;
+    border: 1px solid #F6F6F6;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.dropdown_list{
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row;
+   margin-left: 60px;
+   margin-top: -40px;
+}
+
+.dropdown_list > h5 {
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #141414;
+}
+
+.dropdown_list > p {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;    
+    color: #545454;
+    
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+
+  .mobile_nav{
+      display: none;
+  }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .mobile_nav{
+        display: none;
+    }
+    
+  }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .mobile_nav{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
+    
+  }
+
+
+.mobile_display{
+    background-color: #fff;
+    height: 64px;
+    box-shadow:none;
+}
+
+.mobile_display ul{
+    margin-left: -30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: block;
+}
+
+
+.mobile_display > ul > li{
+ text-decoration: none;
+ list-style: none;
+}
+
+
+.mobile_display > ul > li > button{
+    margin-top: -12%;
+    margin-right: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    
+    /* position: absolute; */
+    
+    
+    /* Core Tokens/Interactive */
+    
+    background: #009083;
+    border-radius: 2px;
+   }
+   
+
+/* body {
+    background: #87cc77;
+    margin: 0;
+    font-family: arial;
+    width: 100vw;
+    height: 100vh;
+    animation: bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+} */
+@keyframes bugfix {
+    from {
+        padding: 0;
+   }
+    to {
+        padding: 0;
+   }
+}
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+   }
+    to {
+        padding: 0;
+   }
+}
+#overlay-button {
+    position: absolute;
+    right: 2em;
+    top: 3em;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+    color: #333332;
+}
+#overlay-button span {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: white;
+    position: relative;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    background-color: #333332;;
+}
+#overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+ 
+}
+#overlay-button span:after {
+    top: 10px;
+}
+#overlay-button span:before, #overlay-button span:after {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: #333332;;
+    position: absolute;
+    content: "";
+    transition: all 0.2s ease-in-out;
+}
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+    background: #333332;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked ~ #overlay {
+    visibility: visible;
+}
+input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent;
+}
+input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1;
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+#overlay {
+    height: 100vh;
+    width: 100%;
+    background: #009083;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+}
+#overlay.active {
+    visibility: visible;
+}
+#overlay ul {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 12%;
+}
+#overlay ul li {
+    padding: 1em;
+}
+#overlay ul li a {
+    text-decoration: none;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+#overlay ul li a:hover {
+    color: #333332;
+}
+
+hr{
+    border: 1px solid #5FC8BF;
+}
